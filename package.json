@@ -1,6 +1,6 @@
 {
   "name": "phold",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hold promise rejection until requested",
   "main": "index.js",
   "files": [
