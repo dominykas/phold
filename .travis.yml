@@ -1,6 +1,15 @@
 sudo: false
 language: node_js
 node_js:
-  - '6'
-  - '8'
-  - '9'
+  - "6"
+  - "8"
+  - "9"
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: "hello@dominykas.com"
+    api_key:
+      secure: "NX3R01YqveKaOlVxYmdcCoSlFv99tiie2BZKGZJS0+Yw2VFrIbNhpk83e0rSpkfWS76z5rWFPrKwL+66thLtKRaGDt+ckUef5ES/CUX9JGbVMJINz/fl/lHDV9w79PwjC+a6AFR056vX1/dSnjVjk14I4dpEUOTGkByHIBt/UhuwcNvXoAN22oul+zDL2pa6zozGGTC8dkUfNnXf5W9lriRmiGsdiD5bK2cOccQ5m5Xmz6mE0uJbWPytYHy688XbSDVe3X9V56brH2rgUUXcSdvjsSpN75TRN/dWeMH37oN781e6Yx3otHHXRHF3UtTt6K3s1IWec1SwOFZSaI0PDnUrBaBXBEbunirbS5kDEzdVdgVSEGjkBPvwAkCxbK+cAF+TW/QAr2Kj6B9cQpv8BfIyDwRxTKqCG/Sb1gmRfrdJZ61ub+13IrZSV1HtwE1KjLSSYMJVwhjFepq3X/RbwXn07XoBIIPKbncGxcicqJAJsEjK9CedsE0iuKUsm33AnfgFZxcUV54OxEgKmFbXEV/GeBzTWPe3kBsqsGqxdzq5NCo1Gbxll3yN8aDJTVSvtXaXWGDeU9uG/qx/ptk4qn7eN63FPWoOSUAERfDBq3zg4qvQ23oaNlI91u+dtYOjKaMrSsjV8O0abFvCO5zj/8DpQTRfaHdo04JQT+WY7m8="
+    on:
+      tags: true
+      node_js: "8"
