@@ -1,0 +1,28 @@
+{
+  "name": "phold",
+  "version": "0.0.0",
+  "description": "Hold promise rejection until requested",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominykas/phold.git"
+  },
+  "author": "Dominykas Blyžė",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominykas/phold/issues"
+  },
+  "homepage": "https://github.com/dominykas/phold#readme",
+  "devDependencies": {
+    "code": "5.x.x",
+    "hoek": "5.x.x",
+    "sinon": "4.x.x",
+    "teamwork": "3.x.x"
+  }
+}
